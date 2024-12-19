@@ -556,7 +556,7 @@ address {
   height: 24px;
   top: 24px;
   right: 24px;
-  border: solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: absolute;
   padding: 0;
@@ -600,6 +600,8 @@ address {
   height: 40px;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 .form-icon {
   position: absolute;
@@ -614,16 +616,16 @@ address {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
+  line-height: 1.17;
   height: 120px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  line-height: 1.17;
   background-color: transparent;
   outline: transparent;
 }
 .comment-input:placeholder-shown {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -702,7 +704,8 @@ address {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
 }
 .policy-thumb {
@@ -716,16 +719,16 @@ address {
   fill: transparent;
 }
 
-.hidden-checkbox:checked + .checkbox-style {
+.hidden-checkbox:checked + label .checkbox-style {
   border-radius: 2px;
   background-color: #404bbf;
   border: none;
 }
 
-.hidden-checkbox:checked + .checkbox-style .checkbox-icon {
-  display: block;
+.hidden-checkbox:checked + label .checkbox-style .checkbox-icon {
   fill: #f4f4fd;
 }
+
 .policy-link {
   line-height: 1.33333;
   text-decoration: underline;
