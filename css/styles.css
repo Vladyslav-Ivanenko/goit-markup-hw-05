@@ -660,7 +660,7 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-icon-button:hover,
-.close-icon-button:focus-within .close-icon {
+.close-icon-button:focus .close-icon {
   background-color: #404bbf;
   fill: #fff;
   border: none;
@@ -679,7 +679,7 @@ address {
   border: 1px solid #4d5ae5;
   border-radius: 4px;
 }
-.hidden-checkbox {
+.visually-hidden {
   position: absolute;
   opacity: 0;
   pointer-events: none;
@@ -719,13 +719,13 @@ address {
   fill: transparent;
 }
 
-.hidden-checkbox:checked + label .checkbox-style {
+.visually-hidden:checked + label .checkbox-style {
   border-radius: 2px;
   background-color: #404bbf;
   border: none;
 }
 
-.hidden-checkbox:checked + label .checkbox-style .checkbox-icon {
+.visually-hidden:checked + label .checkbox-icon {
   fill: #f4f4fd;
 }
 
